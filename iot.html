@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="iot.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="Top">
+        <div class="first">
+            <p><i class="fa-solid fa-gem"></i></i>Laura<span>Alinda</span></p>
+            <nav>
+             <ul>
+                  <li><a href ="index.html">Home</a></li>
+                  <li><a href ="#ux-research">About</a></li>
+                  <li><a href ="#pictures">Projects</a></li>
+                  <li><a href ="index.html#achievements">Achievements</a></li>
+                  <li><a href ="#contact">Contact</a></li>
+             </ul>
+            </nav>
+        </div>
+    
+    
+
+  <div class="container">
+    <h1>MY IOT PROJECTS</h1>
+     <div class="row">
+        <div class="col">
+           <div class="first-video">
+               <img src="/images/this is america.jpeg" width="100%">
+               <img src="images/playbtn.png" class="play-btn" 
+               onclick="playVideo('images/Snapchat-224918173.mp4')">
+           </div>
+        </div>
+        <div class="col">
+            <div class="small-img-row">
+                <div class="small-img">
+                <img src="/images/this is america.jpeg">
+                <img src="images/playbtn.png" class="play-btn">
+                </div>
+                <p>This system is aming making the use<br>
+                    or the public lavatories more<br>
+                    private and convinient to use.</p>
+            </div>
+            <div class="small-img-row">
+                <div class="small-img">
+                <img src="/images/this is america.jpeg">
+                <img src="images/playbtn.png" class="play-btn">
+                </div>
+                <p>This system is aming making the use<br>
+                    or the public lavatories more<br>
+                    private and convinient to use.</p>
+            </div>
+            <div class="small-img-row">
+                <div class="small-img">
+                <img src="/images/this is america.jpeg">
+                <img src="images/playbtn.png" class="play-btn">
+                </div>
+                <p>This system is aming making the use<br>
+                    or the public lavatories more<br>
+                    private and convinient to use.</p>
+            </div>
+         </div>
+        </div>
+  </div>
+
+  <div class="video-player" id="videoPlayer">
+      <video width="80%" controls autoplay id="myVideo">
+        <source src="images/Snapchat-224918173.mp4" type="video/mp4">
+      </video>
+      <img src="images/cloe_btn-removebg-preview.png" class="close-btn" onclick="stopVideo()">
+  </div>
+  
+
+<script>
+ var videoPlayer= document.getElementById("videoPlayer");
+ var myVideo= document.getElementById("myVideo");
+
+ function stopVideo(){
+      videoPlayer.style.display ="none";
+ }
+
+ function playVideo(file){
+     myVideo.src=file;
+     videoPlayer.style.display ="block";
+ }
+</script>
+
+    
+</body>
+</html>
